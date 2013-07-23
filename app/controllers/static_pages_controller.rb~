@@ -1,0 +1,12 @@
+class StaticPagesController < ApplicationController
+# StaticPagesController inherits from ApplicationController and the behavior
+# of its methods is specific to Rails. When visiting the URI /static pages/home,
+# Rails looks in the StaticPages controller and executes the code in the home action,
+# and then renders the view corresponding to the action.
+  def home
+  end
+
+  def help
+  end
+
+end
