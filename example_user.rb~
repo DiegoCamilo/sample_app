@@ -1,0 +1,19 @@
+class User
+
+  #Attributes that can be accessed through database iteration.
+  attr_accessor :name, :email
+
+  #Defines instance variables which can be accessed instantly
+  #in the views. 
+  def initialize(attributes = {})
+    #Instance variables based on the attributes from DB.
+    @name  = attributes[:name]
+    @email = attributes[:email]
+  end
+
+  def formatted_email
+    #Arranges a string with formatted e-mail.
+    "#{@name} <#{@email}>"
+  end
+
+end
